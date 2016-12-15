@@ -3,10 +3,10 @@
 			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 <beans>
 	<bean id="e" class="com.codingKnowledge.entity.Engine">
-		<constructor-arg value="6 Cylincder 4 valve" />
+		<property name="engineType" value="6 Cylincder 4 valve"></property>
 	</bean>
 	<bean id="c" class="com.codingKnowledge.entity.Car">
-		<constructor-arg value="2017" />
-		<constructor-arg ref="e" />
+		<property name="modelYear" value="2017" />
+		<property name="engine" ref="e" />
 	</bean>
 </beans>
