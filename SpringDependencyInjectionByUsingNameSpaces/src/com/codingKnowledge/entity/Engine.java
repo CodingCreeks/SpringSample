@@ -4,7 +4,11 @@ public class Engine {
 	String engineType;
 
 	public void setEngineType(String engineType) {
-		System.out.println(engineType+" -- enigne data Dependency Injection by 'p' NameSpace");
+		this.engineType = engineType;
+	}
+
+	public Engine(String engineType) {
+		super();
 		this.engineType = engineType;
 	}
 
