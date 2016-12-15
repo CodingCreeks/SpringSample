@@ -12,9 +12,9 @@
 
 	<bean id="c1" class="com.codingKnowledge.entity.Car" p:modelYear="2017"
 		p:engine-ref="e1" />
-		
-		
-		<!-- Setter Injection by 'c' nameSpace -->
+
+
+	<!-- Setter Injection by 'c' nameSpace -->
 
 	<bean id="e2" class="com.codingKnowledge.entity.Engine"
 		c:engineType="'V' Type Engine" />
