@@ -2,11 +2,20 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
 			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 <beans>
+
 	<bean id="e" class="com.codingKnowledge.entity.Engine">
-	<property name="engineType" value="6 Cylincder 4 valve"></property>
+
+		<!--primitive data type -->
+		<constructor-arg value="6 Cylincder 4 valve" />
 	</bean>
+
 	<bean id="c" class="com.codingKnowledge.entity.Car">
-		<property name="modelYear" value="2017" />
-		<property name="engine" ref="e" />
+
+		<!--primitive data type -->
+		<constructor-arg value="2017" />
+
+		<!--Secondary data type -->
+		<constructor-arg ref="e" />
 	</bean>
+
 </beans>
