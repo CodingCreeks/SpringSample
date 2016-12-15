@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Car {
 
+	/* We can't Autowire the primitive data types */
 	int modelYear;
 
 	@Qualifier(value="e2")
