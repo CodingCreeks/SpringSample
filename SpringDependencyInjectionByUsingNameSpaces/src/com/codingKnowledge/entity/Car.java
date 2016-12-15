@@ -6,11 +6,15 @@ public class Car {
 	Engine engine;
 
 	public void setModelYear(int modelYear) {
-		System.out.println(modelYear+" -- modelYear data Dependency Injection by 'p' NameSpace");
 		this.modelYear = modelYear;
 	}
 
 	public void setEngine(Engine engine) {
+		this.engine = engine;
+	}
+
+	public Car(int modelYear, Engine engine) {
+		this.modelYear = modelYear;
 		this.engine = engine;
 	}
 
