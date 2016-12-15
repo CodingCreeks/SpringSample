@@ -9,7 +9,14 @@ public class TestCar {
 
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-		Car car = (Car) context.getBean("c1");
-		car.printCar();
+		
+		System.out.println("Dependency Injection by 'p' NameSpace");
+		Car car1 = (Car) context.getBean("c1");
+		car1.printCar();
+		
+		System.out.println("Dependency Injection by 'c' NameSpace");
+		Car car2 = (Car) context.getBean("c2");
+		car2.printCar();
 	}
 }
+
