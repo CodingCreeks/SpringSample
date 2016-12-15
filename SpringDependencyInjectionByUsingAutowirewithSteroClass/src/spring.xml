@@ -15,7 +15,4 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 
 	<bean id="e2" class="com.codingKnowledge.entity.Engine"
 		p:engineType="'V' Type Engine" />
-
-	<bean id="c" class="com.codingKnowledge.entity.Car" p:modelYear="2017" />
-
 </beans>
