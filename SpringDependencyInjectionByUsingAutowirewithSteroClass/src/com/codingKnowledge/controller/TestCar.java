@@ -11,7 +11,7 @@ public class TestCar {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
-		Car car = (Car) context.getBean("c");
+		Car car = (Car) context.getBean(Car.class);
 		car.printCar();
 	}
 }
