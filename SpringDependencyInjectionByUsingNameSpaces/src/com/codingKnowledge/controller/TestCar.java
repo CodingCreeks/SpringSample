@@ -19,4 +19,3 @@ public class TestCar {
 		car2.printCar();
 	}
 }
-
