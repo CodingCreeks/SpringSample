@@ -2,7 +2,6 @@ package com.codingKnowledge.entity;
 
 import org.springframework.stereotype.Component;
 
-@Component
 public class Engine {
 	String engineType;
 
