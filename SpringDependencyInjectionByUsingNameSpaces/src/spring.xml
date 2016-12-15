@@ -8,11 +8,18 @@
 	<!-- Setter Injection by 'p' nameSpace -->
 
 	<bean id="e1" class="com.codingKnowledge.entity.Engine"
-		p:engineType="6 Cylincder 4 valve" />
+		p:engineType="'C' Type Eninge" />
 
 	<bean id="c1" class="com.codingKnowledge.entity.Car" p:modelYear="2017"
 		p:engine-ref="e1" />
 		
 		
-		
+		<!-- Setter Injection by 'c' nameSpace -->
+
+	<bean id="e2" class="com.codingKnowledge.entity.Engine"
+		c:engineType="'V' Type Engine" />
+
+	<bean id="c2" class="com.codingKnowledge.entity.Car" c:modelYear="2018"
+		c:engine-ref="e2" />
+
 </beans>
