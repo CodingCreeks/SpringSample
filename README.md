@@ -1,2 +1,2 @@
 # SpringSample
-Spring Smaples for References
+Spring simple smaples for References
