@@ -11,14 +11,22 @@
 </head>
 <body>
 	<fieldset>
-		<legend>App User Login Details</legend>
+		<legend>${message} App User Login Details</legend>
 
-		<form:form action="appusersearch.sp" commandName="apploginform">
+		<h5 style="color: red;">
+			<form:errors path="apploginform.*" />
+		</h5>
+
+		<form:form action="appUserSearch.sp" commandName="apploginform">
 			<table>
 				<tbody>
 					<tr>
 						<td><label>Name :</label></td>
 						<td><form:input path="name" /></td>
+					</tr>
+					<tr>
+						<td><label>Age :</label></td>
+						<td><form:input path="age" /></td>
 					</tr>
 					<tr>
 						<td><label>Email :</label></td>

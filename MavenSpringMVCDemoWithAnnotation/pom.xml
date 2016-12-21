@@ -82,6 +82,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>MAvenSpringMVCDemoWithAnnotation</finalName>
+		<finalName>MavenSpringMVCDemoWithAnnotation</finalName>
 	</build>
 </project>
